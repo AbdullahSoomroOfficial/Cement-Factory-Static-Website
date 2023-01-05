@@ -3,6 +3,6 @@
 This webiste is created as a template for client.
 
 Technologies used : 
- 1 - HTML<br>
- 2 - CSS
- 3 - JS
+ <br>1 - HTML
+ <br>2 - CSS
+ <br>3 - JS
