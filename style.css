@@ -1,3 +1,133 @@
+:root {
+    --blue: #3D8BFD;
+}
+
+body {
+    font-family: monospace, sans-serif;
+}
+
 .bg-color-blue {
-    background-color: blue;
+    background-color: var(--blue);
+}
+
+.bg-color-black {
+    background-color: black;
+}
+
+.text-color-white {
+    color: white;
+}
+
+.text-color-blue {
+    color: var(--blue);
+}
+
+/* navbar start */
+
+.nav-item .text-color-white:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: grey;
+    border-radius: 4px;
+}
+
+#navbar-items-container > .nav-item {
+    text-align: center;
+}
+
+/* navbar end */
+
+/* section 1 start */
+
+#section-1 {
+    height: calc(100vh - 64px);
+    margin-top: 64px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-image {
+    opacity: 0.4;
+}
+
+#title {
+    position: absolute;
+    color: white;
+    font-size: larger;
+    width: 80%;
+    max-width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.tag-line {
+    font-size: x-small;
+    font-weight: 900;
+}
+
+#title:nth-child(n+2) {
+    /* excluding tagline */
+    font-weight: 900;
+}
+
+/* section 1 end */
+
+/* section 2 start */
+
+.carousel-image {
+    aspect-ratio: 18/9;
+}
+
+/* section 2 end */
+
+
+
+/* section 3 start */
+/* section 3 end */
+
+@media screen and (min-width: 576px) {
+    .tag-line {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tag-line {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #navbar-items-container {
+        width: 70%;
+    }
+    
+    .tag-line {
+        font-size: larger;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #navbar-items-container {
+        width: 60%;
+    }
+    
+    .tag-line {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #navbar-items-container {
+        width: 45%;
+    }
+    
+    .tag-line {
+        font-size: xx-large;
+    }
 }
