@@ -66,7 +66,7 @@ body {
 }
 
 .tag-line {
-    font-size: x-small;
+    font-size: 0.63em;
     font-weight: 900;
 }
 
@@ -85,20 +85,32 @@ body {
 
 /* section 2 end */
 
-
-
 /* section 3 start */
+#section-3 .service .card {
+    border-color: var(--blue);
+}
+
 /* section 3 end */
+
+/* section 4 start */
+#section-4 .card {
+    border-color: var(--blue) !important;
+}
+/* section 4 end */
 
 @media screen and (min-width: 576px) {
     .tag-line {
-        font-size: small;
+        font-size: 0.95em;
     }
+
+    /* section 3 start */
+       
+    /* section 3 end */
 }
 
 @media screen and (min-width: 768px) {
     .tag-line {
-        font-size: large;
+        font-size: 1.2em;
     }
 }
 
@@ -108,7 +120,7 @@ body {
     }
     
     .tag-line {
-        font-size: larger;
+        font-size: 1.25em;
     }
 }
 
@@ -118,7 +130,7 @@ body {
     }
     
     .tag-line {
-        font-size: x-large;
+        font-size: 1.4em;
     }
 }
 
@@ -128,6 +140,6 @@ body {
     }
     
     .tag-line {
-        font-size: xx-large;
+        font-size: 1.5em;
     }
 }
