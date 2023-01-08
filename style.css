@@ -4,6 +4,7 @@
 
 body {
     font-family: monospace, sans-serif;
+    overflow: hidden;
 }
 
 .bg-color-blue {
