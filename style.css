@@ -128,12 +128,26 @@ body {
 
 /* section 6 start */
 .project-img-container {
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
 }
 
+.project-img {
+    width: 100vw;
+}
+
 /* section 6 end */
+
+@media screen and (min-width: 500px) {
+    /* section 6 start */
+        .project-img {
+            width: 90vw;
+        }    
+    /* section 6 end */
+}
+
 
 @media screen and (min-width: 576px) {
     .tag-line {
@@ -146,6 +160,14 @@ body {
     }
 
     /* section 5 end */
+}
+
+@media screen and (min-width: 600px) {
+    /* section 6 start */
+        .project-img {
+            width: 80vw;
+        }    
+    /* section 6 end */
 }
 
 @media screen and (min-width: 768px) {
@@ -161,18 +183,9 @@ body {
     /* section 5 end */
 
     /* section 6 start */
-        .project-img-container {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1em;
-        }
-        /* odd */
-        .project-img:nth-child(2n+1) {
-            justify-self: end;
-        }
-        /* even */
-        .project-img:nth-child(2n+2) {
-            justify-self: start;
-        }
+        .project-img {
+            width: 70vw;
+        }    
     /* section 6 end */
 }
 
@@ -186,7 +199,19 @@ body {
     }
     /* section 6 start */
         .project-img-container {
+            grid-template-columns: repeat(2, 1fr);
             gap: 1em;
+        }
+        .project-img {
+            width: calc(100vw/2 - 1em);
+        } 
+        /* odd */
+        .project-img:nth-child(2n+1) {
+            justify-self: end;
+        }
+        /* even */
+        .project-img:nth-child(2n+2) {
+            justify-self: start;
         }
     /* section 6 end */
 }
@@ -220,14 +245,19 @@ body {
 /* xxx-large */
 @media screen and (min-width: 1600px) {
     /* section 6 start */
-    /* .project-img-container {
+    .project-img-container {
         grid-template-columns: repeat(4, 1fr);
         gap: 0;
         justify-content: center;
-    } */
+    }
+
+    .project-img {
+        width: calc(100vw/4);
+    }
+
     /* all */
-    /* .project-img:nth-child(n) {
+    .project-img:nth-child(n) {
         justify-self: center;
-    } */
+    }
     /* section 6 end */
 }
